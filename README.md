@@ -1,4 +1,4 @@
-# Anatomy Study Guide
+# Anatomy Tutor
 
 ### Date: 07/07/2023
 
