@@ -4,7 +4,11 @@
 
 ### By: James Aubrey
 
-#### [GitHub](https://github.com/jaubrey92) | [LinkedIn](https://www.linkedin.com/in/james-aubrey/) | [Trello with Wireframe, ERD, CHD](https://trello.com/b/fEmFl61k/anatomy-tutor)
+#### [GitHub](https://github.com/jaubrey92) | [LinkedIn](https://www.linkedin.com/in/james-aubrey/)
+
+## **_Getting Started_**
+
+#### [Trello with Wireframe, ERD, CHD](https://trello.com/b/fEmFl61k/anatomy-tutor)
 
 ---
 
