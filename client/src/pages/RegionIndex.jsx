@@ -1,5 +1,9 @@
 const RegionIndex = () => {
-  return <div></div>
+  return (
+    <div>
+      <h1>Body Regions</h1>
+    </div>
+  )
 }
 
 export default RegionIndex

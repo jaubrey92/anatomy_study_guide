@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div>
+    <div className="aboutPage">
       <h1>About Me</h1>
       <p>
         My name is James Aubrey and I am a former physical therapist. During PT

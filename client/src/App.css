@@ -1,3 +1,44 @@
 body {
   margin: 0;
 }
+
+nav {
+  background-color: #C6FFFF;
+  height: 50px;
+  display: flex;
+  font-family: 'Courier New', Courier, monospace;
+  justify-content: flex-end;
+  align-content: center;
+}
+
+header nav a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+a {
+  text-align: center;
+  margin: 5px;
+}
+
+a:hover {
+  text-align: center;
+  margin: 5px;
+  background-color: aqua;
+}
+
+.homePage {
+  display: flex;
+  align-content: center;
+  margin: 0 auto;
+}
+
+.aboutPage {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1 {
+  margin: 0 auto;
+}
