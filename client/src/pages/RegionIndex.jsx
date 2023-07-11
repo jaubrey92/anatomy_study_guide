@@ -7,19 +7,19 @@ const RegionIndex = () => {
       <div className="regionPage">
         <div className="regionSelect">
           <Link to="/view/region/1">
-            <div className="headAndNeck"></div>
+            <div className="headAndNeck">Head and Neck</div>
           </Link>
           <Link to="/view/region/2">
-            <div className="shoulderGirdle"></div>
+            <div className="shoulderGirdle">Shoulder Girdle</div>
           </Link>
           <Link to="/view/region/3">
-            <div className="armsAndAbdominals"></div>
+            <div className="armsAndAbdominals">Arms and Abdominals</div>
           </Link>
           <Link to="/view/region/4">
-            <div className="hipAndThigh"></div>
+            <div className="hipAndThigh">Hip and Thigh</div>
           </Link>
           <Link to="/view/region/5">
-            <div className="shankAndFoot"></div>
+            <div className="shankAndFoot">Shank and Foot</div>
           </Link>
         </div>
       </div>

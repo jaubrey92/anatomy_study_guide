@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 nav {
@@ -20,6 +21,7 @@ header nav a {
 a {
   text-align: center;
   margin: 5px;
+  text-decoration: none;
 }
 
 a:hover {
@@ -46,20 +48,37 @@ header {
   margin: 0 auto;
 }
 
+.aboutContainer {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+
 .aboutPage {
   display: flex;
   flex-wrap: wrap;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 5px 5px 5px 5px #888888;
+  height: 400px;
+  width: 500px;
+}
+
+.aboutParagraph {
+  padding: 10px;
+  text-align: center;
+}
+
+.profPic {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
 }
 
 h1 {
   margin: 0 auto;
   text-align: center;
-}
-
-.regionSelect {
-  height: 600px;
-  width: 600px;
-  background-image: url("https://media.istockphoto.com/id/459951679/photo/male-anatomy-view.jpg?s=612x612&w=0&k=20&c=-T2Zk12yDJgrF3T2XPz80ThaC_vZKh-s7qCYQwXNAXA=");
+  padding: 5px;
 }
 
 .regionPage {
@@ -67,69 +86,113 @@ h1 {
   justify-content: center;
 }
 
-.headAndNeck {
-  background-color: black;
-  opacity: 0;
+.regionSelect {
+  height: 600px;
   width: 600px;
-  height: 125px;
+  background-image: url("https://media.istockphoto.com/id/459951679/photo/male-anatomy-view.jpg?s=612x612&w=0&k=20&c=-T2Zk12yDJgrF3T2XPz80ThaC_vZKh-s7qCYQwXNAXA=");
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 5px 5px 5px 5px #888888;
+}
+
+.headAndNeck {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0);
+  width: 600px;
+  height: 80px;
 }
 
 .shoulderGirdle {
-  background-color: black;
-  opacity: 0;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0);
   width: 600px;
   height: 75px;
 }
 
 .armsAndAbdominals {
-  background-color: black;
-  opacity: 0;
-  width: 600px;
-  height: 100px;
-}
-
-.hipAndThigh {
-  background-color: black;
-  opacity: 0;
-  width: 600px;
-  height: 150px;
-}
-
-.shankAndFoot {
-  background-color: black;
-  opacity: 0;
-  width: 600px;
-  height: 150px;
-}
-
-.headAndNeck:hover {
-  background-color: black;
-  opacity: 0.25;
-  width: 600px;
-  height: 125px;
-}
-
-.shoulderGirdle:hover {
-  background-color: black;
-  opacity: 0.25;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0);
   width: 600px;
   height: 75px;
 }
-.armsAndAbdominals:hover {
-  background-color: black;
-  opacity: 0.25;
+
+.hipAndThigh {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0);
+  width: 600px;
+  height: 110px;
+}
+
+.shankAndFoot {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0);
   width: 600px;
   height: 100px;
+  margin-top: 25px;
 }
+
+.headAndNeck:hover {
+  background-color: rgba(0, 0, 0, .5);
+  width: 600px;
+  height: 80px;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  text-decoration: none;
+}
+
+.shoulderGirdle:hover {
+  background-color: rgba(0, 0, 0, .5);
+  width: 600px;
+  height: 75px;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  text-decoration: none;
+}
+
+.armsAndAbdominals:hover {
+  background-color: rgba(0, 0, 0, .5);
+  width: 600px;
+  height: 75px;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  text-decoration: none;
+}
+
 .hipAndThigh:hover {
-  background-color: black;
-  opacity: 0.25;
+  background-color: rgba(0, 0, 0, .5);
   width: 600px;
-  height: 150px;
+  height: 110px;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  text-decoration: none;
 }
+
 .shankAndFoot:hover {
-  background-color: black;
-  opacity: 0.25;
+  background-color: rgba(0, 0, 0, .5);
   width: 600px;
-  height: 150px;
+  height: 100px;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  text-decoration: none;
+  margin-top: 25px;
 }
