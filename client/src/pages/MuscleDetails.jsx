@@ -31,6 +31,7 @@ const MuscleDetails = (props) => {
           <h3>Insertion: {cardDetails.insertion}</h3>
           <h3>Innervation: {cardDetails.innervation}</h3>
           <h3>Action: {cardDetails.action}</h3>
+          {/* <h4>Comments: {cardDetails.comments}</h4> */}
         </div>
       </section>
     </div>

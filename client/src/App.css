@@ -41,4 +41,83 @@ a:hover {
 
 h1 {
   margin: 0 auto;
+  text-align: center;
+}
+
+.regionSelect {
+  height: 600px;
+  width: 600px;
+  background-image: url("https://media.istockphoto.com/id/459951679/photo/male-anatomy-view.jpg?s=612x612&w=0&k=20&c=-T2Zk12yDJgrF3T2XPz80ThaC_vZKh-s7qCYQwXNAXA=");
+}
+
+.regionPage {
+  display: flex;
+  justify-content: center;
+}
+
+.headAndNeck {
+  background-color: black;
+  opacity: 0;
+  width: 600px;
+  height: 125px;
+}
+
+.shoulderGirdle {
+  background-color: black;
+  opacity: 0;
+  width: 600px;
+  height: 75px;
+}
+
+.armsAndAbdominals {
+  background-color: black;
+  opacity: 0;
+  width: 600px;
+  height: 100px;
+}
+
+.hipAndThigh {
+  background-color: black;
+  opacity: 0;
+  width: 600px;
+  height: 150px;
+}
+
+.shankAndFoot {
+  background-color: black;
+  opacity: 0;
+  width: 600px;
+  height: 150px;
+}
+
+.headAndNeck:hover {
+  background-color: black;
+  opacity: 0.25;
+  width: 600px;
+  height: 125px;
+}
+
+.shoulderGirdle:hover {
+  background-color: black;
+  opacity: 0.25;
+  width: 600px;
+  height: 75px;
+}
+.armsAndAbdominals:hover {
+  background-color: black;
+  opacity: 0.25;
+  width: 600px;
+  height: 100px;
+}
+.hipAndThigh:hover {
+  background-color: black;
+  opacity: 0.25;
+  width: 600px;
+  height: 150px;
+}
+.shankAndFoot:hover {
+  background-color: black;
+  opacity: 0.25;
+  width: 600px;
+  height: 150px;
 }
