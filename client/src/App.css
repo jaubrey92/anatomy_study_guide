@@ -28,6 +28,18 @@ a:hover {
   background-color: aqua;
 }
 
+header {
+  background-color: #C6FFFF;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navStyle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .homePage {
   display: flex;
   align-content: center;

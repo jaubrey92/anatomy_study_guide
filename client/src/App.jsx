@@ -11,6 +11,7 @@ import HeadAndNeck from './pages/regions/HeadAndNeck'
 import HipAndThigh from './pages/regions/HipAndThigh'
 import ShankAndFoot from './pages/regions/ShankAndFoot'
 import ShoulderGirdle from './pages/regions/ShoulderGirdle'
+import AddMuscle from './pages/AddMuscle'
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/add" element={<AddMuscle />} />
           <Route path="/view/cards" element={<MuscleIndex />} />
           <Route path="/cards/details/:cardId" element={<MuscleDetails />} />
           <Route path="/view/region" element={<RegionIndex />} />
