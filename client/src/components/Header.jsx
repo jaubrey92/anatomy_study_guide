@@ -7,7 +7,7 @@ const Header = () => {
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/view/cards">All Muscles</Link>
-        <Link to="/view/cards/:regionId">Body Regions</Link>
+        <Link to="/view/region">Body Regions</Link>
       </nav>
     </header>
   )
