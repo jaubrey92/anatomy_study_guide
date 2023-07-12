@@ -59,6 +59,10 @@ header {
   align-content: center;
   justify-content: center;
   width: 500px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px lightgrey;
+  margin: 25px;
+  padding: 25px;
 }
 
 .homeGIF {
