@@ -14,11 +14,15 @@ const MuscleDetails = (props) => {
     action: '',
     image: ''
   }
+  let initialComment = {
+    content: ''
+  }
 
   const [cardDetails, setCardDetails] = useState({})
   const [comments, setComments] = useState([])
   const [toggleEdit, setToggleEdit] = useState(true)
   const [cardState, setCardState] = useState(currentState)
+  const [commentState, setCommentState] = useState({})
 
   useEffect(() => {
     const getCard = async () => {
@@ -49,6 +53,14 @@ const MuscleDetails = (props) => {
     await Client.put(`/cards/${cardId}`, cardState)
   }
 
+  const handleComment = (e) => {
+    setCommentState({ [e.target.id]: e.target.value })
+  }
+
+  const handleCommentSubmit = async () => {
+    await Client.post(`/cards/${cardId}/comments`, commentState)
+  }
+
   return toggleEdit ? (
     <div>
       <section>
@@ -69,6 +81,19 @@ const MuscleDetails = (props) => {
               <Comment comment={comment.content} />
             ))}
           </div>
+
+          <form onSubmit={handleCommentSubmit}>
+            <label htmlFor="content">Add a Comment: </label>
+            <textarea
+              id="content"
+              cols="30"
+              rows="10"
+              onChange={handleComment}
+              value={commentState.content}
+            ></textarea>
+            <button type="submit">Add</button>
+          </form>
+
           <button type="submit" onClick={() => deleteCard()}>
             Delete
           </button>
