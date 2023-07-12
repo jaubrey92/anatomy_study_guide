@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import Client from '../services/api'
 import Comment from '../components/Comment'
 
 const MuscleDetails = (props) => {
   let { cardId } = useParams()
+  let navigate = useNavigate()
 
   const [cardDetails, setCardDetails] = useState({})
   const [comments, setComments] = useState([])
@@ -12,13 +13,17 @@ const MuscleDetails = (props) => {
   useEffect(() => {
     const getCard = async () => {
       let response = await Client.get(`/cards/${cardId}`)
-      console.log(response.data)
       setCardDetails(response.data)
       setComments(response.data.comments)
     }
 
     getCard()
   }, [cardId])
+
+  const deleteCard = async () => {
+    await Client.delete(`/cards/${cardId}`)
+    navigate('/view/cards')
+  }
 
   return (
     <div>
@@ -35,11 +40,15 @@ const MuscleDetails = (props) => {
           <h3>Innervation: {cardDetails.innervation}</h3>
           <h3>Action: {cardDetails.action}</h3>
           <div>
-            <h3>User Comments: </h3>
+            <h3>User Comments and Study Tips: </h3>
             {comments.map((comment) => (
               <Comment comment={comment.content} />
             ))}
           </div>
+          <button type="submit" onClick={() => deleteCard()}>
+            Delete
+          </button>
+          <button>Edit</button>
         </div>
       </section>
     </div>
