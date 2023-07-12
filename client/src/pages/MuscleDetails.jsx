@@ -26,6 +26,7 @@ const MuscleDetails = (props) => {
       let response = await Client.get(`/cards/${cardId}`)
       setCardDetails(response.data)
       setComments(response.data.comments)
+      setCardState(response.data)
     }
 
     getCard()
