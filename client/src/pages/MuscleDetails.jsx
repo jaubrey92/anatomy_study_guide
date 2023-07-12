@@ -26,9 +26,9 @@ const MuscleDetails = (props) => {
 
   useEffect(() => {
     const getCard = async () => {
-      console.log(cardId)
       let response = await Client.get(`/cards/${cardId}`)
       setCardDetails(response.data)
+      console.log(cardDetails)
       setComments(response.data.comments)
       setCardState(response.data)
     }
@@ -78,7 +78,11 @@ const MuscleDetails = (props) => {
           <div>
             <h3>User Comments and Study Tips: </h3>
             {comments.map((comment) => (
-              <Comment comment={comment.content} />
+              <Comment
+                card_id={cardDetails._id}
+                id={comment._id}
+                comment={comment.content}
+              />
             ))}
           </div>
 
