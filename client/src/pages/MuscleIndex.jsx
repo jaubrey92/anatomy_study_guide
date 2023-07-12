@@ -28,12 +28,7 @@ const MuscleIndex = () => {
             <Flashcard
               id={card._id}
               title={card.title}
-              origin={card.origin}
-              insertion={card.insertion}
-              innervation={card.innervation}
-              action={card.action}
               image={card.image}
-              // comments={card.comments.content}
               // onClick={onClick}
             />
           </Link>
