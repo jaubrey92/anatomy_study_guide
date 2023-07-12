@@ -1,8 +1,9 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
-import { Link } from 'react-router-dom'
 
 const AddMuscle = () => {
+  let navigate = useNavigate()
   const initialState = {
     title: '',
     origin: '',
@@ -24,6 +25,7 @@ const AddMuscle = () => {
     event.preventDefault()
     await axios.post('http://localhost:3001/cards', formState)
     setFormState(initialState)
+    navigate('/view/cards')
   }
 
   return (

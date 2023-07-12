@@ -22,12 +22,16 @@ a {
   text-align: center;
   margin: 5px;
   text-decoration: none;
+  padding: 3px;
 }
 
 a:hover {
   text-align: center;
   margin: 5px;
   background-color: aqua;
+  padding: 3px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px lightgrey;
 }
 
 header {
