@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { GetCards } from '../services/CardServices'
+import axios from 'axios'
 
 const AddMuscle = () => {
   const initialState = {
@@ -19,40 +19,58 @@ const AddMuscle = () => {
     setFormState({ ...formState, [event.target.id]: event.target.value })
   }
 
-  const handleSubmit = () => {}
+  const handleSubmit = async (event) => {
+    event.preventDefault()
+    await axios.post('http://localhost:3001/cards', formState)
+    setFormState(initialState)
+  }
 
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor="issueType">Muscle Name:</label>
-      <select
-        id="issueType"
-        onChange={handleChange}
-        value={formState.issueType}
-        // defaultValue="select"
-      >
-        <option selected="selected" value="select" disabled>
-          Select Service Type
-        </option>
-        <option value="outage">Service Outage</option>
-        <option value="billing">Billing</option>
-        <option value="cancel">Cancel Service</option>
-      </select>
-      <label htmlFor="subject">Subject:</label>
+      <label htmlFor="title">Muscle Name:</label>
       <input
         type="text"
-        id="subject"
+        id="title"
         onChange={handleChange}
-        value={formState.subject}
+        value={formState.title}
+      ></input>
+      <label htmlFor="origin">Origin:</label>
+      <input
+        type="text"
+        id="origin"
+        onChange={handleChange}
+        value={formState.origin}
       />
-      <label htmlFor="message">Message</label>
+      <label htmlFor="insertion">Insertion:</label>
+      <input
+        type="text"
+        id="insertion"
+        onChange={handleChange}
+        value={formState.insertion}
+      />
+      <label htmlFor="innervation">Innervation:</label>
+      <input
+        type="text"
+        id="innervation"
+        onChange={handleChange}
+        value={formState.innervation}
+      />
+      <label htmlFor="action">Action:</label>
+      <input
+        type="text"
+        id="action"
+        onChange={handleChange}
+        value={formState.action}
+      />
+      <label htmlFor="image">Image URL:</label>
       <textarea
-        id="message"
+        id="image"
         cols="30"
         rows="10"
         onChange={handleChange}
-        value={formState.message}
+        value={formState.image}
       ></textarea>
-      <button type="submit">Send</button>
+      <button type="submit">Submit</button>
     </form>
   )
 }
