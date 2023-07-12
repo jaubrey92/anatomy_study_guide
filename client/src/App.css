@@ -46,10 +46,27 @@ header {
   justify-content: center;
 }
 
+.homeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
 .homePage {
   display: flex;
+  flex-wrap: wrap;
   align-content: center;
-  margin: 0 auto;
+  justify-content: center;
+  width: 500px;
+}
+
+.homeGIF {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px 5px lightgrey;
+  background-color: #dddddd;
 }
 
 .aboutContainer {

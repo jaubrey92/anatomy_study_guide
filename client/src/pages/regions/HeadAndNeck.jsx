@@ -21,7 +21,7 @@ const MuscleIndex = () => {
 
   return (
     <div>
-      <h1>All Muscles</h1>
+      <h1>Head and Neck</h1>
       <div>
         {cards.map((card) => (
           <Link to={`/cards/details/${card._id}`}>
