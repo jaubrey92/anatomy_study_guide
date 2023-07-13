@@ -14,6 +14,7 @@ const AddMuscle = () => {
   }
 
   const [formState, setFormState] = useState(initialState)
+  const [region, setRegion] = useState('')
 
   const [card, setCard] = useState({})
 
@@ -28,53 +29,101 @@ const AddMuscle = () => {
     navigate('/view/cards')
   }
 
+  const handleSelect = (event) => {
+    setRegion({ [event.target.name]: event.target.value })
+  }
+
+  const addToRegion = async (event) => {
+    event.preventDefault()
+    if (region.regions === 'shoulderGirdle') {
+      await axios.put(
+        'http://localhost:3001/regions/64aef6218ece2e345489fb0d/cards',
+        formState
+      )
+    } else if (region.regions === 'shankAndFoot') {
+      await axios.put(
+        'http://localhost:3001/regions/64aef60f8ece2e345489fb0b/cards',
+        formState
+      )
+    } else if (region.regions === 'hipAndThigh') {
+      await axios.put(
+        'http://localhost:3001/regions/64aef6028ece2e345489fb09/cards',
+        formState
+      )
+    } else if (region.regions === 'headAndNeck') {
+      await axios.put(
+        'http://localhost:3001/regions/64aef5f18ece2e345489fb07/cards',
+        formState
+      )
+    } else if (region.regions === 'armsAndAbdominals') {
+      await axios.put(
+        'http://localhost:3001/regions/64aef5df8ece2e345489fb05/cards',
+        formState
+      )
+    }
+  }
+
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="title">Muscle Name:</label>
-      <input
-        type="text"
-        id="title"
-        onChange={handleChange}
-        value={formState.title}
-      ></input>
-      <label htmlFor="origin">Origin:</label>
-      <input
-        type="text"
-        id="origin"
-        onChange={handleChange}
-        value={formState.origin}
-      />
-      <label htmlFor="insertion">Insertion:</label>
-      <input
-        type="text"
-        id="insertion"
-        onChange={handleChange}
-        value={formState.insertion}
-      />
-      <label htmlFor="innervation">Innervation:</label>
-      <input
-        type="text"
-        id="innervation"
-        onChange={handleChange}
-        value={formState.innervation}
-      />
-      <label htmlFor="action">Action:</label>
-      <input
-        type="text"
-        id="action"
-        onChange={handleChange}
-        value={formState.action}
-      />
-      <label htmlFor="image">Image URL:</label>
-      <textarea
-        id="image"
-        cols="30"
-        rows="10"
-        onChange={handleChange}
-        value={formState.image}
-      ></textarea>
-      <button type="submit">Submit</button>
-    </form>
+    <div>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="title">Muscle Name:</label>
+        <input
+          type="text"
+          id="title"
+          onChange={handleChange}
+          value={formState.title}
+        ></input>
+        <label htmlFor="origin">Origin:</label>
+        <input
+          type="text"
+          id="origin"
+          onChange={handleChange}
+          value={formState.origin}
+        />
+        <label htmlFor="insertion">Insertion:</label>
+        <input
+          type="text"
+          id="insertion"
+          onChange={handleChange}
+          value={formState.insertion}
+        />
+        <label htmlFor="innervation">Innervation:</label>
+        <input
+          type="text"
+          id="innervation"
+          onChange={handleChange}
+          value={formState.innervation}
+        />
+        <label htmlFor="action">Action:</label>
+        <input
+          type="text"
+          id="action"
+          onChange={handleChange}
+          value={formState.action}
+        />
+        <label htmlFor="image">Image URL:</label>
+        <textarea
+          id="image"
+          cols="30"
+          rows="10"
+          onChange={handleChange}
+          value={formState.image}
+        ></textarea>
+        <button type="submit">Submit</button>
+      </form>
+
+      <form onSubmit={addToRegion}>
+        <label htmlFor="regions">Add to a Region:</label>
+        <select onChange={handleSelect} name="regions" id="regions">
+          <option value="headAndNeck">Head and Neck</option>
+          <option value="shoulderGirdle">Shoulder Girdle</option>
+          <option value="armsAndAbdominals">Arms and Abdominals</option>
+          <option value="hipAndThigh">Hip and Thigh</option>
+          <option value="footAndShank">Foot and Shank</option>
+        </select>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   )
 }
 

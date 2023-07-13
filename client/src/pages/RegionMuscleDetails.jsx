@@ -9,7 +9,9 @@ const RegionMuscleDetails = (props) => {
 
   useEffect(() => {
     const getCard = async () => {
+      console.log(muscleId)
       let response = await Client.get(`/cards/${muscleId}`)
+      console.log(response)
       setMuscleDetails(response.data)
     }
 

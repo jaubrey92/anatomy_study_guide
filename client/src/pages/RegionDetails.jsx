@@ -8,11 +8,13 @@ const RegionDetails = () => {
   let { regionId } = useParams()
 
   const [muscles, setMuscles] = useState([])
+  const [title, setTitle] = useState('')
 
   const getTheseFlashcards = async () => {
     let response = await Client.get(`/regions/${regionId}`)
     console.log(response)
     setMuscles(response.data.muscles)
+    setTitle(response.data.content)
   }
 
   useEffect(() => {
@@ -21,7 +23,7 @@ const RegionDetails = () => {
 
   return (
     <div>
-      <h1>Arms and Abdominals</h1>
+      <h1>{title}</h1>
       <div>
         {muscles.map((muscle) => (
           <Link to={`/view/regions/${muscle._id}`}>
