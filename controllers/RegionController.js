@@ -1,5 +1,16 @@
 const { Region } = require('../models')
 
+const UpdateRegion = async (req, res) => {
+  const region = await Region.findById(req.params.region_id)
+  region.muscles.push(req.body)
+  try {
+    await region.save()
+    res.send(region)
+  } catch (error) {
+    throw error
+  }
+}
+
 const GetRegions = async (req, res) => {
   try {
     const regions = await Region.find({})
@@ -50,7 +61,8 @@ const GetRegion = async (req, res) => {
 module.exports = {
   GetRegions,
   CreateRegion,
-  GetRegion
+  GetRegion,
+  UpdateRegion
   // UpdateCard,
   // DeleteCard
 }
