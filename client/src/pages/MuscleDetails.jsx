@@ -108,52 +108,57 @@ const MuscleDetails = (props) => {
       </section>
     </div>
   ) : (
-    <form onSubmit={handleSubmitEdit}>
-      <label htmlFor="title">Muscle Name:</label>
-      <input
-        type="text"
-        id="title"
-        onChange={handleEdit}
-        value={cardState.title}
-      ></input>
-      <label htmlFor="origin">Origin:</label>
-      <input
-        type="text"
-        id="origin"
-        onChange={handleEdit}
-        value={cardState.origin}
-      />
-      <label htmlFor="insertion">Insertion:</label>
-      <input
-        type="text"
-        id="insertion"
-        onChange={handleEdit}
-        value={cardState.insertion}
-      />
-      <label htmlFor="innervation">Innervation:</label>
-      <input
-        type="text"
-        id="innervation"
-        onChange={handleEdit}
-        value={cardState.innervation}
-      />
-      <label htmlFor="action">Action:</label>
-      <input
-        type="text"
-        id="action"
-        onChange={handleEdit}
-        value={cardState.action}
-      />
-      <label htmlFor="image">Image URL:</label>
-      <textarea
-        id="image"
-        cols="30"
-        rows="10"
-        onChange={handleEdit}
-        value={cardState.image}
-      ></textarea>
-      <button type="submit">Submit Changes</button>
-    </form>
+    <div>
+      <h1>Edit Flashcard</h1>
+      <div className="editFormsContainer">
+        <form onSubmit={handleSubmitEdit}>
+          <label htmlFor="title">Muscle Name:</label>
+          <input
+            type="text"
+            id="title"
+            onChange={handleEdit}
+            value={cardState.title}
+          ></input>
+          <label htmlFor="origin">Origin:</label>
+          <input
+            type="text"
+            id="origin"
+            onChange={handleEdit}
+            value={cardState.origin}
+          />
+          <label htmlFor="insertion">Insertion:</label>
+          <input
+            type="text"
+            id="insertion"
+            onChange={handleEdit}
+            value={cardState.insertion}
+          />
+          <label htmlFor="innervation">Innervation:</label>
+          <input
+            type="text"
+            id="innervation"
+            onChange={handleEdit}
+            value={cardState.innervation}
+          />
+          <label htmlFor="action">Action:</label>
+          <input
+            type="text"
+            id="action"
+            onChange={handleEdit}
+            value={cardState.action}
+          />
+          <label htmlFor="image">Image URL:</label>
+          <textarea
+            id="image"
+            cols="30"
+            rows="10"
+            onChange={handleEdit}
+            value={cardState.image}
+          ></textarea>
+          <button type="submit">Submit Changes</button>
+        </form>
+      </div>
+    </div>
   )
 }
 
