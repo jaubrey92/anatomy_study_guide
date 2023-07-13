@@ -9,6 +9,15 @@ export const GetCards = async () => {
   }
 }
 
+export const GetRegions = async () => {
+  try {
+    const res = await Client.get('/regions')
+    return res.data
+  } catch (error) {
+    throw error
+  }
+}
+
 // export const GetCard = async () => {
 //   try {
 //     const res = await Client.get('/cards/')

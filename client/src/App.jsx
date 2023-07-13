@@ -6,12 +6,9 @@ import About from './pages/About'
 import MuscleIndex from './pages/MuscleIndex'
 import MuscleDetails from './pages/MuscleDetails'
 import RegionIndex from './pages/RegionIndex'
-import ArmsAndAbdominals from './pages/regions/ArmsAndAbdominals'
-import HeadAndNeck from './pages/regions/HeadAndNeck'
-import HipAndThigh from './pages/regions/HipAndThigh'
-import ShankAndFoot from './pages/regions/ShankAndFoot'
-import ShoulderGirdle from './pages/regions/ShoulderGirdle'
 import AddMuscle from './pages/AddMuscle'
+import RegionDetails from './pages/RegionDetails'
+import RegionMuscleDetails from './pages/RegionMuscleDetails'
 
 const App = () => {
   return (
@@ -25,11 +22,11 @@ const App = () => {
           <Route path="/view/cards" element={<MuscleIndex />} />
           <Route path="/cards/details/:cardId" element={<MuscleDetails />} />
           <Route path="/view/region" element={<RegionIndex />} />
-          <Route path="/view/region/1" element={<ArmsAndAbdominals />} />
-          <Route path="/view/region/2" element={<HeadAndNeck />} />
-          <Route path="/view/region/3" element={<HipAndThigh />} />
-          <Route path="/view/region/4" element={<ShankAndFoot />} />
-          <Route path="/view/region/5" element={<ShoulderGirdle />} />
+          <Route path="/view/region/:regionId" element={<RegionDetails />} />
+          <Route
+            path="/view/regions/:muscleId"
+            element={<RegionMuscleDetails />}
+          />
         </Routes>
       </main>
     </div>
