@@ -232,9 +232,19 @@ h1 {
 
 .flip-card {
   background-color: transparent;
+  font-size: 10px;
   width: 300px;
   height: 300px;
   perspective: 1000px;
+  box-shadow: 5px 5px 5px 5px #888888;
+  border-radius: 10px;
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .flip-card-inner {
@@ -260,13 +270,13 @@ h1 {
 }
 
 .flip-card-front {
-  background-color: #bbb;
+  background-color: white;
   color: black;
 }
 
 .flip-card-back {
-  background-color: #2980b9;
-  color: white;
+  background-color: white;
+  color: black;
   transform: rotateY(180deg);
 }
 
@@ -304,6 +314,12 @@ h1 {
   height: 200px;
 }
 
+.regionCardContainer {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
 input {
   display: block;
 }
@@ -315,4 +331,20 @@ div {
 .logo {
   align-self: flex-start;
   color: white;
+}
+
+.cardDetailsPage {
+  width: 60%;
+  box-shadow: 5px 5px 5px 5px #888888;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 25px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  border: #bbb solid 1px;
+  margin: 2px;
+  padding: 5px;
 }

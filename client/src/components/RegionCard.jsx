@@ -15,6 +15,7 @@ const RegionCard = (props) => {
           <img
             src={props.image}
             alt="MuscleImage"
+            className="regionCardImage"
             // style={{width:300px;height:300px;}}
           />
         </div>

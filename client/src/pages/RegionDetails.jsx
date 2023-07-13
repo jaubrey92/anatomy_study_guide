@@ -24,7 +24,7 @@ const RegionDetails = () => {
   return (
     <div>
       <h1>{title}</h1>
-      <div>
+      <div className="regionCardContainer">
         {muscles.map((muscle) => (
           <Link
             title={muscle.title}

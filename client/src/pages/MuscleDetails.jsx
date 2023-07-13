@@ -62,7 +62,7 @@ const MuscleDetails = (props) => {
   }
 
   return toggleEdit ? (
-    <div>
+    <div className="cardDetailsPage">
       <section>
         <div>
           <h1>{cardDetails.title}</h1>
@@ -76,7 +76,7 @@ const MuscleDetails = (props) => {
           <h3>Innervation: {cardDetails.innervation}</h3>
           <h3>Action: {cardDetails.action}</h3>
           <div>
-            <h3>User Comments and Study Tips: </h3>
+            <h3>Fun Facts: </h3>
             {comments.map((comment) => (
               <Comment
                 card_id={cardDetails._id}
@@ -87,7 +87,7 @@ const MuscleDetails = (props) => {
           </div>
 
           <form onSubmit={handleCommentSubmit}>
-            <label htmlFor="content">Add a Comment: </label>
+            <label htmlFor="content">Add a Fun Fact: </label>
             <textarea
               id="content"
               cols="30"
