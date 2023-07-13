@@ -1,6 +1,6 @@
 const Flashcard = (props) => {
   return (
-    <div key={props.id}>
+    <div key={props.id} className="flashcard">
       <div>
         <img src={props.image} alt="Muscle Image" />
       </div>

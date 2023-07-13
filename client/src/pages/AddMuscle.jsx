@@ -64,7 +64,8 @@ const AddMuscle = () => {
   }
 
   return (
-    <div>
+    <div className="formsContainer">
+      <h1>Add a Muscle:</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="title">Muscle Name:</label>
         <input

@@ -263,3 +263,20 @@ h1 {
   color: white;
   transform: rotateY(180deg);
 }
+
+.formsContainer {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  border: #bbb;
+  box-shadow: 1px 1px 1px 1px lightgrey;
+  padding: 25px;
+  margin: 10px auto;
+}
+
+.flashcard {
+  box-shadow: 1px 1px 1px 1px lightgrey;
+  border-radius: 10px;
+  width: 300px;
+}
