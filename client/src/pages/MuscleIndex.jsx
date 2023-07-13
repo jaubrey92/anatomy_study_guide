@@ -22,7 +22,7 @@ const MuscleIndex = () => {
   return (
     <div>
       <h1>All Muscles</h1>
-      <div>
+      <div className="flashcardContainer">
         {cards.map((card) => (
           <Link to={`/cards/details/${card._id}`}>
             <Flashcard

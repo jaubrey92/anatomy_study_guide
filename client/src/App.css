@@ -265,18 +265,33 @@ h1 {
 }
 
 .formsContainer {
-  width: 600px;
+  width: 50%;
   display: flex;
   justify-content: center;
   border-radius: 10px;
   border: #bbb;
-  box-shadow: 1px 1px 1px 1px lightgrey;
+  box-shadow: 5px 5px 5px 5px #888888;
   padding: 25px;
   margin: 10px auto;
 }
 
 .flashcard {
-  box-shadow: 1px 1px 1px 1px lightgrey;
+  box-shadow: 5px 5px 5px 5px #888888;
   border-radius: 10px;
   width: 300px;
+}
+
+.flashcardContainer {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.flashcardImage {
+  width: 200px;
+  height: 200px;
+}
+
+input {
+  display: block;
 }

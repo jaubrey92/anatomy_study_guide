@@ -64,66 +64,68 @@ const AddMuscle = () => {
   }
 
   return (
-    <div className="formsContainer">
+    <div>
       <h1>Add a Muscle:</h1>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="title">Muscle Name:</label>
-        <input
-          type="text"
-          id="title"
-          onChange={handleChange}
-          value={formState.title}
-        ></input>
-        <label htmlFor="origin">Origin:</label>
-        <input
-          type="text"
-          id="origin"
-          onChange={handleChange}
-          value={formState.origin}
-        />
-        <label htmlFor="insertion">Insertion:</label>
-        <input
-          type="text"
-          id="insertion"
-          onChange={handleChange}
-          value={formState.insertion}
-        />
-        <label htmlFor="innervation">Innervation:</label>
-        <input
-          type="text"
-          id="innervation"
-          onChange={handleChange}
-          value={formState.innervation}
-        />
-        <label htmlFor="action">Action:</label>
-        <input
-          type="text"
-          id="action"
-          onChange={handleChange}
-          value={formState.action}
-        />
-        <label htmlFor="image">Image URL:</label>
-        <textarea
-          id="image"
-          cols="30"
-          rows="10"
-          onChange={handleChange}
-          value={formState.image}
-        ></textarea>
-        <button type="submit">Submit</button>
-      </form>
+      <div className="formsContainer">
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="title">Muscle Name:</label>
+          <input
+            type="text"
+            id="title"
+            onChange={handleChange}
+            value={formState.title}
+          ></input>
+          <label htmlFor="origin">Origin:</label>
+          <input
+            type="text"
+            id="origin"
+            onChange={handleChange}
+            value={formState.origin}
+          />
+          <label htmlFor="insertion">Insertion:</label>
+          <input
+            type="text"
+            id="insertion"
+            onChange={handleChange}
+            value={formState.insertion}
+          />
+          <label htmlFor="innervation">Innervation:</label>
+          <input
+            type="text"
+            id="innervation"
+            onChange={handleChange}
+            value={formState.innervation}
+          />
+          <label htmlFor="action">Action:</label>
+          <input
+            type="text"
+            id="action"
+            onChange={handleChange}
+            value={formState.action}
+          />
+          <label htmlFor="image">Image URL:</label>
+          <textarea
+            id="image"
+            cols="30"
+            rows="10"
+            onChange={handleChange}
+            value={formState.image}
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
 
-      <form onSubmit={addToRegion}>
-        <label htmlFor="regions">Add to a Region:</label>
-        <select onChange={handleSelect} name="regions" id="regions">
-          <option value="headAndNeck">Head and Neck</option>
-          <option value="shoulderGirdle">Shoulder Girdle</option>
-          <option value="armsAndAbdominals">Arms and Abdominals</option>
-          <option value="hipAndThigh">Hip and Thigh</option>
-          <option value="footAndShank">Foot and Shank</option>
-        </select>
-        <button type="submit">Submit</button>
-      </form>
+        <form onSubmit={addToRegion}>
+          <label htmlFor="regions">Add to a Region:</label>
+          <select onChange={handleSelect} name="regions" id="regions">
+            <option value="headAndNeck">Head and Neck</option>
+            <option value="shoulderGirdle">Shoulder Girdle</option>
+            <option value="armsAndAbdominals">Arms and Abdominals</option>
+            <option value="hipAndThigh">Hip and Thigh</option>
+            <option value="footAndShank">Foot and Shank</option>
+          </select>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     </div>
   )
 }
