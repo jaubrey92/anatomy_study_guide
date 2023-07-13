@@ -18,20 +18,24 @@ header nav a {
   text-align: center;
 }
 
-a {
+nav > a {
   text-align: center;
   margin: 5px;
   text-decoration: none;
   padding: 3px;
 }
 
-a:hover {
+nav > a:hover {
   text-align: center;
   margin: 5px;
   background-color: aqua;
   padding: 3px;
   border-radius: 5px;
   box-shadow: 1px 1px 1px 1px lightgrey;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
@@ -126,7 +130,7 @@ h1 {
   background-color: rgba(0, 0, 0, 0);
   color: rgba(255, 255, 255, 0);
   width: 600px;
-  height: 80px;
+  height: 125px;
 }
 
 .shoulderGirdle {
@@ -147,21 +151,21 @@ h1 {
   background-color: rgba(0, 0, 0, 0);
   color: rgba(255, 255, 255, 0);
   width: 600px;
-  height: 110px;
+  height: 150px;
 }
 
 .shankAndFoot {
   background-color: rgba(0, 0, 0, 0);
   color: rgba(255, 255, 255, 0);
   width: 600px;
-  height: 100px;
+  height: 125px;
   margin-top: 25px;
 }
 
 .headAndNeck:hover {
   background-color: rgba(0, 0, 0, .5);
   width: 600px;
-  height: 80px;
+  height: 125px;
   border-radius: 10px;
   color: rgba(255, 255, 255, 1);
   display: flex;
@@ -200,7 +204,7 @@ h1 {
 .hipAndThigh:hover {
   background-color: rgba(0, 0, 0, .5);
   width: 600px;
-  height: 110px;
+  height: 150px;
   border-radius: 10px;
   color: rgba(255, 255, 255, 1);
   display: flex;
@@ -213,7 +217,7 @@ h1 {
 .shankAndFoot:hover {
   background-color: rgba(0, 0, 0, .5);
   width: 600px;
-  height: 100px;
+  height: 125px;
   border-radius: 10px;
   color: rgba(255, 255, 255, 1);
   display: flex;
@@ -279,6 +283,12 @@ h1 {
   box-shadow: 5px 5px 5px 5px #888888;
   border-radius: 10px;
   width: 300px;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .flashcardContainer {
@@ -294,4 +304,8 @@ h1 {
 
 input {
   display: block;
+}
+
+div {
+  color: black;
 }
