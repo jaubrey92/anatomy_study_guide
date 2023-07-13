@@ -26,7 +26,15 @@ const RegionDetails = () => {
       <h1>{title}</h1>
       <div>
         {muscles.map((muscle) => (
-          <Link to={`/view/regions/${muscle._id}`}>
+          <Link
+            title={muscle.title}
+            origin={muscle.origin}
+            insertion={muscle.insertion}
+            innervation={muscle.innervation}
+            action={muscle.action}
+            image={muscle.image}
+            to={`/view/regions/${muscle._id}`}
+          >
             <RegionCard
               id={muscle._id}
               title={muscle.title}
