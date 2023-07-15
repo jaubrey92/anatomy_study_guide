@@ -31,6 +31,7 @@ const AddMuscle = () => {
 
   const handleSelect = (event) => {
     setRegion({ [event.target.name]: event.target.value })
+    console.log(region)
   }
 
   const addToRegion = async (event) => {
@@ -40,7 +41,7 @@ const AddMuscle = () => {
         'http://localhost:3001/regions/64aef6218ece2e345489fb0d/cards',
         formState
       )
-    } else if (region.regions === 'shankAndFoot') {
+    } else if (region.regions === 'footAndShank') {
       await axios.put(
         'http://localhost:3001/regions/64aef60f8ece2e345489fb0b/cards',
         formState
