@@ -39,6 +39,23 @@ nav > a:hover {
   padding: 3px;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-bottom: solid white 1px;
+}
+
+nav > button {
+  text-align: center;
+  margin: 5px;
+  text-decoration: none;
+  padding: 3px;
+}
+
+nav > button:hover {
+  text-align: center;
+  margin: 5px;
+  padding: 3px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-bottom: solid white 1px;
 }
 
 a {
