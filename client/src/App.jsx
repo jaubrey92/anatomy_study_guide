@@ -9,9 +9,12 @@ import RegionIndex from './pages/RegionIndex'
 import AddMuscle from './pages/AddMuscle'
 import RegionDetails from './pages/RegionDetails'
 import RegionMuscleDetails from './pages/RegionMuscleDetails'
+import LoginHeader from './components/LoginHeader'
+import { useAuth0 } from '@auth0/auth0-react'
 
 const App = () => {
-  return (
+  const { isAuthenticated } = useAuth0()
+  return isAuthenticated ? (
     <div className="App">
       <Header />
       <main>
@@ -27,6 +30,16 @@ const App = () => {
             path="/view/regions/:muscleId"
             element={<RegionMuscleDetails />}
           />
+        </Routes>
+      </main>
+    </div>
+  ) : (
+    <div>
+      <LoginHeader />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </main>
     </div>
