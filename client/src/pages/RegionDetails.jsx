@@ -38,10 +38,10 @@ const RegionDetails = () => {
           <RegionCard
             id={muscle._id}
             title={muscle.title}
-            // origin={card.origin}
-            // insertion={card.insertion}
-            // innervation={card.innervation}
-            // action={card.action}
+            origin={muscle.origin}
+            insertion={muscle.insertion}
+            innervation={muscle.innervation}
+            action={muscle.action}
             image={muscle.image}
             // comments={card.comments.content}
             // onClick={onClick}
