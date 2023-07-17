@@ -271,6 +271,9 @@ h1 {
 .flip-card-front {
   background-color: white;
   color: black;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .flip-card-back {
