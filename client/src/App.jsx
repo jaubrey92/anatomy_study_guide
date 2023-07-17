@@ -8,7 +8,6 @@ import MuscleDetails from './pages/MuscleDetails'
 import RegionIndex from './pages/RegionIndex'
 import AddMuscle from './pages/AddMuscle'
 import RegionDetails from './pages/RegionDetails'
-import RegionMuscleDetails from './pages/RegionMuscleDetails'
 import LoginHeader from './components/LoginHeader'
 import { useAuth0 } from '@auth0/auth0-react'
 
@@ -26,10 +25,6 @@ const App = () => {
           <Route path="/cards/details/:cardId" element={<MuscleDetails />} />
           <Route path="/view/region" element={<RegionIndex />} />
           <Route path="/view/region/:regionId" element={<RegionDetails />} />
-          <Route
-            path="/view/regions/:muscleId"
-            element={<RegionMuscleDetails />}
-          />
         </Routes>
       </main>
     </div>
