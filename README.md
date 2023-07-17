@@ -29,10 +29,16 @@
 - HTML
 - CSS
 - Javascript
+- Heroku
+- Auth0
 
 ---
 
 ## **_Screenshots_**
+
+![Image](https://i.ibb.co/fHXmx8M/Screenshot-2023-07-17-at-3-41-26-PM.png)
+
+![Image](https://i.ibb.co/6wsMT91/Screenshot-2023-07-17-at-3-42-23-PM.png)
 
 ### Inspiration
 
@@ -47,3 +53,16 @@
 #### Example Flashcard Layout: [Flashcard](https://bodylightbooks.com/images/mpc_g10_sample_260w.png)
 
 #### Website Layout Inspiration: [Website Layout Inspiration](https://nerdherd-gamehub.netlify.app/)
+
+#### Card Flip CSS: [Card Flip CSS](https://www.w3schools.com/howto/howto_css_flip_card.asp)
+
+#### Flexbox Guide: [Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+#### CSS Grid Guide: [CSS Grid Guide](https://css-tricks.com/snippets/css/complete-guide-grid/)
+
+---
+
+## **_Future Updates_**
+
+- Full CRUD on Body Regions
+- Quiz section that graphs results over time
