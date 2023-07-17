@@ -34,7 +34,7 @@ const MuscleDetails = (props) => {
     }
 
     getCard()
-  }, [cardId])
+  }, [cardId, comments])
 
   const deleteCard = async () => {
     await Client.delete(`/cards/${cardId}`)
