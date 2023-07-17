@@ -8,7 +8,8 @@ const Comment = (props) => {
   const deleteComment = async () => {
     console.log(props.card_id)
     await Client.delete(`/comments/${props.id}`)
-    // navigate('/view/cards')
+    //   navigate('/view/cards')
+    //   navigate(`/cards/details/${props.card_id}`)
   }
 
   return (

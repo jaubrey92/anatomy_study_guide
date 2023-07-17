@@ -34,7 +34,7 @@ const MuscleDetails = (props) => {
     }
 
     getCard()
-  }, [cardId, comments])
+  }, [cardId /*, comments*/])
 
   const deleteCard = async () => {
     await Client.delete(`/cards/${cardId}`)
@@ -66,7 +66,9 @@ const MuscleDetails = (props) => {
       <section>
         <div>
           <h1>{cardDetails.title}</h1>
-          <img src={cardDetails.image} alt="Muscle Image" />
+          <div className="detailsCardHeader">
+            <img src={cardDetails.image} alt="Muscle Image" />
+          </div>
         </div>
       </section>
       <section>

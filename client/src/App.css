@@ -387,3 +387,13 @@ section {
   border: none;
   font-size: 15px;
 }
+
+.detailsCardHeader {
+  display: flex;
+  justify-content: center;
+}
+
+.detailsCardHeader > img {
+  width: 400px;
+  height: 400px;
+}
