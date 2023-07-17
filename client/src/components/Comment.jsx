@@ -9,7 +9,6 @@ const Comment = (props) => {
     console.log(props.card_id)
     await Client.delete(`/comments/${props.id}`)
     navigate('/view/cards')
-    //   navigate(`/cards/details/${props.card_id}`)
   }
 
   return (

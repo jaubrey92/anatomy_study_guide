@@ -26,15 +26,6 @@ const RegionDetails = () => {
       <h1>{title}</h1>
       <div className="regionCardContainer">
         {muscles.map((muscle) => (
-          // <Link
-          //   title={muscle.title}
-          //   origin={muscle.origin}
-          //   insertion={muscle.insertion}
-          //   innervation={muscle.innervation}
-          //   action={muscle.action}
-          //   image={muscle.image}
-          //   to={`/view/regions/${muscle._id}`}
-          // >
           <RegionCard
             id={muscle._id}
             title={muscle.title}
@@ -43,10 +34,7 @@ const RegionDetails = () => {
             innervation={muscle.innervation}
             action={muscle.action}
             image={muscle.image}
-            // comments={card.comments.content}
-            // onClick={onClick}
           />
-          // </Link>
         ))}
       </div>
     </div>
