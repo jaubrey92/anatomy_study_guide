@@ -13,7 +13,7 @@ const About = () => {
           PT school, we had to learn a great deal about anatomy. This website is
           designed to help current PT students memorize their OINAs, or origin,
           insertion, innervation, and action, for each muscle they need to learn
-          for school.
+          for school. Log in or sign up to get started!
         </p>
       </div>
     </div>
