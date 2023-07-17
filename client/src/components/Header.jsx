@@ -11,7 +11,9 @@ const Header = () => {
         <Link to="/add">Add a Muscle</Link> |
         <Link to="/view/cards">All Muscles</Link> |
         <Link to="/view/region">Body Regions</Link> |
-        <button onClick={() => logout()}>Logout</button>
+        <button className="logButton" onClick={() => logout()}>
+          Logout
+        </button>
       </nav>
     </header>
   )

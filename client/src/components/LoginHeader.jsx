@@ -7,7 +7,10 @@ const LogoutHeader = () => {
     <header>
       <nav className="navStyle">
         <Link to="/">Home</Link> | <Link to="/about">About</Link> |
-        <button onClick={() => loginWithRedirect()}> Sign Up/Log In</button>
+        <button className="logButton" onClick={() => loginWithRedirect()}>
+          {' '}
+          Sign Up/Log In
+        </button>
       </nav>
     </header>
   )
