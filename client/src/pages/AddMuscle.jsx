@@ -128,6 +128,7 @@ const AddMuscle = () => {
           <button type="submit">Submit</button>
         </form>
       </div>
+      <footer>All Rights Reserved, &copy; 2023 Anatomy Tutor &nbsp;</footer>
     </div>
   ) : (
     <div>
@@ -180,6 +181,7 @@ const AddMuscle = () => {
           <button type="submit">Submit</button>
         </form>
       </div>
+      <footer>All Rights Reserved, &copy; 2023 Anatomy Tutor &nbsp;</footer>
     </div>
   )
 }

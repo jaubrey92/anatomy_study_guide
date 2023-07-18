@@ -9,6 +9,7 @@ const Home = () => {
           className="homeGIF"
         />
       </div>
+      <footer>All Rights Reserved, &copy; 2023 Anatomy Tutor &nbsp;</footer>
     </div>
   )
 }

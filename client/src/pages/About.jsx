@@ -26,6 +26,7 @@ const About = () => {
           | LinkedIn
         </a>
       </div>
+      <footer>All Rights Reserved, &copy; 2023 Anatomy Tutor &nbsp;</footer>
     </div>
   )
 }

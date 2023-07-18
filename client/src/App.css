@@ -455,3 +455,16 @@ input {
 label {
   margin: 2px;
 }
+
+footer {
+  background-color: #3600C5;
+  height: 25px;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
