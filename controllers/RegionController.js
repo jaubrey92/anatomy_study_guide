@@ -38,31 +38,9 @@ const GetRegion = async (req, res) => {
   }
 }
 
-// const UpdateCard = async (req, res) => {
-//   try {
-//     const card = await Card.findByIdAndUpdate(req.params.card_id, req.body, {
-//       new: true
-//     })
-//     res.send(card)
-//   } catch (error) {
-//     throw error
-//   }
-// }
-
-// const DeleteCard = async (req, res) => {
-//   try {
-//     await Card.deleteOne({ _id: req.params.card_id })
-//     res.send({ msg: 'Post Deleted', status: 'Ok' })
-//   } catch (error) {
-//     throw error
-//   }
-// }
-
 module.exports = {
   GetRegions,
   CreateRegion,
   GetRegion,
   UpdateRegion
-  // UpdateCard,
-  // DeleteCard
 }

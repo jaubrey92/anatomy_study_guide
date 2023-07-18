@@ -17,12 +17,3 @@ export const GetRegions = async () => {
     throw error
   }
 }
-
-// export const GetCard = async () => {
-//   try {
-//     const res = await Client.get('/cards/')
-//     return res.data
-//   } catch (error) {
-//     throw error
-//   }
-// }

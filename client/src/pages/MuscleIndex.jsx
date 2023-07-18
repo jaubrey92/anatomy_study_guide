@@ -25,12 +25,7 @@ const MuscleIndex = () => {
       <div className="flashcardContainer">
         {cards.map((card) => (
           <Link to={`/cards/details/${card._id}`}>
-            <Flashcard
-              id={card._id}
-              title={card.title}
-              image={card.image}
-              // onClick={onClick}
-            />
+            <Flashcard id={card._id} title={card.title} image={card.image} />
           </Link>
         ))}
       </div>
