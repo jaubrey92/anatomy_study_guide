@@ -15,6 +15,16 @@ const About = () => {
           insertion, innervation, and action, for each muscle they need to learn
           for school. Log in or sign up to get started!
         </p>
+        <a className="contactInfo" href="https://github.com/jaubrey92">
+          GitHub |{' '}
+        </a>{' '}
+        <a
+          className="contactInfo"
+          href="https://www.linkedin.com/in/james-aubrey/"
+        >
+          {' '}
+          | LinkedIn
+        </a>
       </div>
     </div>
   )

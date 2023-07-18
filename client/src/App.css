@@ -434,3 +434,12 @@ button:hover {
   width: 200px;
   height: 200px;
 }
+
+.contactInfo {
+  color: black;
+}
+
+.contactInfo:hover {
+  color: black;
+  text-decoration: underline;
+}
