@@ -31,7 +31,6 @@ const AddMuscle = () => {
 
   const handleSelect = (event) => {
     setRegion({ [event.target.name]: event.target.value })
-    console.log(region)
   }
 
   const addToRegion = async (event) => {

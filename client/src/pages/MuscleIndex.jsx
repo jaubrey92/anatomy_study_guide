@@ -11,7 +11,6 @@ const MuscleIndex = () => {
 
   const getAllFlashcards = async () => {
     let response = await GetCards()
-    console.log(response)
     setCards(response)
   }
 

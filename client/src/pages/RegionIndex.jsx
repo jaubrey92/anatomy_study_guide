@@ -11,7 +11,6 @@ const RegionIndex = () => {
 
   const getAllRegions = async () => {
     let response = await GetRegions()
-    console.log(response)
     setRegionOne(response[0])
     setRegionTwo(response[1])
     setRegionThree(response[2])

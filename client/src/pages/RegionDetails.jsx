@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import RegionCard from '../components/RegionCard'
-import { Link } from 'react-router-dom'
 import Client from '../services/api'
 
 const RegionDetails = () => {
@@ -12,7 +11,6 @@ const RegionDetails = () => {
 
   const getTheseFlashcards = async () => {
     let response = await Client.get(`/regions/${regionId}`)
-    console.log(response)
     setMuscles(response.data.muscles)
     setTitle(response.data.content)
   }

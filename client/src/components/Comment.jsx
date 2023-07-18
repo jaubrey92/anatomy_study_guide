@@ -5,7 +5,6 @@ const Comment = (props) => {
   let navigate = useNavigate()
 
   const deleteComment = async () => {
-    console.log(props.card_id)
     await Client.delete(`/comments/${props.id}`)
     navigate('/view/cards')
   }

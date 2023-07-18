@@ -28,7 +28,6 @@ const MuscleDetails = (props) => {
     const getCard = async () => {
       let response = await Client.get(`/cards/${cardId}`)
       setCardDetails(response.data)
-      console.log(cardDetails)
       setComments(response.data.comments)
       setCardState(response.data)
     }
