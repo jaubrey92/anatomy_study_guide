@@ -110,7 +110,7 @@ const AddMuscle = () => {
           <textarea
             id="image"
             cols="30"
-            rows="10"
+            rows="5"
             onChange={handleChange}
             value={formState.image}
           ></textarea>
@@ -174,7 +174,7 @@ const AddMuscle = () => {
           <textarea
             id="image"
             cols="30"
-            rows="10"
+            rows="5"
             onChange={handleChange}
             value={formState.image}
           ></textarea>

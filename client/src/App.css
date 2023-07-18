@@ -443,3 +443,15 @@ button:hover {
   color: black;
   text-decoration: underline;
 }
+
+textarea {
+  margin: 2px;
+}
+
+input {
+  margin: 2px;
+}
+
+label {
+  margin: 2px;
+}

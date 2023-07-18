@@ -89,11 +89,11 @@ const MuscleDetails = (props) => {
           </div>
 
           <form onSubmit={handleCommentSubmit}>
-            <label htmlFor="content">Add a Fun Fact: </label>
+            <label htmlFor="content">Add a Comment/Fun Fact: </label>
             <textarea
               id="content"
-              cols="30"
-              rows="10"
+              cols="20"
+              rows="5"
               onChange={handleComment}
               value={commentState.content}
             ></textarea>
