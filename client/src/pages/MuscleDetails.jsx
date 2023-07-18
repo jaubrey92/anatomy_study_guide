@@ -78,7 +78,7 @@ const MuscleDetails = (props) => {
           <h3>Innervation: {cardDetails.innervation}</h3>
           <h3>Action: {cardDetails.action}</h3>
           <div>
-            <h3>Fun Facts: </h3>
+            <h3>Fun Facts and Study Tips: </h3>
             {comments.map((comment) => (
               <Comment
                 card_id={cardDetails._id}

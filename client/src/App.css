@@ -383,7 +383,7 @@ button {
   color: white;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
-  border: none;
+  border: 1px solid #3600C5;
   font-size: 15px;
   margin: 3px;
   border-radius: 5px;
@@ -392,10 +392,9 @@ button {
 button:hover {
   background-color: white;
   color: #3600C5;
-  border: 2px solid #3600C5;
+  border: 1px solid #3600C5;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
-  border: none;
   font-size: 15px;
   margin: 3px;
   border-radius: 5px;
@@ -406,11 +405,13 @@ button:hover {
   color: white;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
-  border: none;
+  border-bottom: solid #3600C5 1px;
   font-size: 15px;
 }
 
 .logButton:hover {
+  background-color: #3600C5;
+  color: white;
   text-align: center;
   margin: 5px;
   padding: 3px;
