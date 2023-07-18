@@ -281,7 +281,6 @@ h1 {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -379,6 +378,29 @@ section {
   margin: 10px auto;
 }
 
+button {
+  background-color: #3600C5;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  border: none;
+  font-size: 15px;
+  margin: 3px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: white;
+  color: #3600C5;
+  border: 2px solid #3600C5;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  border: none;
+  font-size: 15px;
+  margin: 3px;
+  border-radius: 5px;
+}
+
 .logButton {
   background-color: #3600C5;
   color: white;
@@ -386,6 +408,15 @@ section {
   font-weight: bold;
   border: none;
   font-size: 15px;
+}
+
+.logButton:hover {
+  text-align: center;
+  margin: 5px;
+  padding: 3px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-bottom: solid white 1px;
 }
 
 .detailsCardHeader {
