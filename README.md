@@ -8,7 +8,9 @@
 
 ## **_Getting Started_**
 
-#### [Trello with Wireframe, ERD, CHD](https://trello.com/b/fEmFl61k/anatomy-tutor)
+#### [Trello, Wireframe, ERD, CHD](https://trello.com/b/fEmFl61k/anatomy-tutor)
+
+#### [Anatomy Tutor Deployed](https://anatomy-tutor-front-end.vercel.app/)
 
 ---
 
