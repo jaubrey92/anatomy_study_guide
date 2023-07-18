@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && touch ./dist/CNAME && echo 'https://anatomy-tutor-jaa.com/' >> ./dist/CNAME && npx surge --project ./dist --domain 'https://anatomy-tutor-jaa.com/'",
     "preview": "vite preview"
   },
   "dependencies": {
