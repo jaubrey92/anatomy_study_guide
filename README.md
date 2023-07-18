@@ -14,7 +14,7 @@
 
 ## **_Description_**
 
-#### This website is designed for physical therapy students that are learning musculoskeletal anatomy for school. My website will have a login/sign up page and a home page describing the wesbite. There will be a page listing all of the flashcards to choose from and study and another page that allows the user to select body regions if they want to focus their studies in that direction. When a specific card is selected, the user will see details about the muscle, including the origin, insertion, innervation, and muscle action. In other words, the muscle's OINA. Authentication and authorization will allow logged in user's to select specific muscle's to add to their collection to allow for more targeted study. There will be three models, in addition to the user model, one each for a flashcard, a user's collection, and one for grouping muscles by body region. Full CRUD operations will be available on the flashcards, as users will be able to create, read, update, and delete flashcards as they need for their classes.
+#### This website is designed for physical therapy students that are learning musculoskeletal anatomy for school. They are able to create flashcards and add as much detail as they need to study for their classes. There are input spaces for each muscle's origin, insertion, innervation,action and an image of the muscle can be uploaded as well. Students can leave comments and memorable study tips as well to further improve their studies. Additionally, separate flashcards are separated by body region, to match up with the different units students learn as they go through their anatomy course. Authorization and authentication is implemented through Auth0, and students are only able to create and study flashcards if they are signed up and logged in. There are three models, a flashcard model, a comments/post model, and a body region model with full CRUD on the flashcard model.
 
 ---
 
@@ -40,19 +40,9 @@
 
 ![Image](https://i.ibb.co/6wsMT91/Screenshot-2023-07-17-at-3-42-23-PM.png)
 
-### Inspiration
-
-![Image](https://images.twinkl.co.uk/tw1n/image/private/t_630/image_repo/ae/b0/au-sc-1648599563-muscle-flash-cards_ver_1.jpg)
-
-![Image](https://bodylightbooks.com/images/mpc_g10_sample_260w.png)
-
 ---
 
 ## **_Credits_**
-
-#### Example Flashcard Layout: [Flashcard](https://bodylightbooks.com/images/mpc_g10_sample_260w.png)
-
-#### Website Layout Inspiration: [Website Layout Inspiration](https://nerdherd-gamehub.netlify.app/)
 
 #### Card Flip CSS: [Card Flip CSS](https://www.w3schools.com/howto/howto_css_flip_card.asp)
 
@@ -60,9 +50,12 @@
 
 #### CSS Grid Guide: [CSS Grid Guide](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
+#### Auth0 Implementation: [Auth0 Implementation](https://www.youtube.com/watch?v=MqczHS3Z2bc&t=985s)
+
 ---
 
 ## **_Future Updates_**
 
 - Full CRUD on Body Regions
 - Quiz section that graphs results over time
+- Search Bar
