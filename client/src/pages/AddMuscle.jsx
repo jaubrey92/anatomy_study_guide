@@ -15,6 +15,7 @@ const AddMuscle = () => {
 
   const [formState, setFormState] = useState(initialState)
   const [region, setRegion] = useState('')
+  const [toggleAddRegion, setToggleAddRegion] = useState(false)
 
   const [card, setCard] = useState({})
 
@@ -25,8 +26,7 @@ const AddMuscle = () => {
   const handleSubmit = async (event) => {
     event.preventDefault()
     await axios.post('http://localhost:3001/cards', formState)
-    setFormState(initialState)
-    navigate('/view/cards')
+    setToggleAddRegion(true)
   }
 
   const handleSelect = (event) => {
@@ -62,9 +62,11 @@ const AddMuscle = () => {
         formState
       )
     }
+    setFormState(initialState)
+    navigate('/view/cards')
   }
 
-  return (
+  return toggleAddRegion ? (
     <div>
       <h1>Add a Muscle:</h1>
       <div className="formsContainer">
@@ -124,6 +126,58 @@ const AddMuscle = () => {
             <option value="hipAndThigh">Hip and Thigh</option>
             <option value="footAndShank">Foot and Shank</option>
           </select>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  ) : (
+    <div>
+      <h1>Add a Muscle:</h1>
+      <div className="formsContainer">
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="title">Muscle Name:</label>
+          <input
+            type="text"
+            id="title"
+            onChange={handleChange}
+            value={formState.title}
+          ></input>
+          <label htmlFor="origin">Origin:</label>
+          <input
+            type="text"
+            id="origin"
+            onChange={handleChange}
+            value={formState.origin}
+          />
+          <label htmlFor="insertion">Insertion:</label>
+          <input
+            type="text"
+            id="insertion"
+            onChange={handleChange}
+            value={formState.insertion}
+          />
+          <label htmlFor="innervation">Innervation:</label>
+          <input
+            type="text"
+            id="innervation"
+            onChange={handleChange}
+            value={formState.innervation}
+          />
+          <label htmlFor="action">Action:</label>
+          <input
+            type="text"
+            id="action"
+            onChange={handleChange}
+            value={formState.action}
+          />
+          <label htmlFor="image">Image URL:</label>
+          <textarea
+            id="image"
+            cols="30"
+            rows="10"
+            onChange={handleChange}
+            value={formState.image}
+          ></textarea>
           <button type="submit">Submit</button>
         </form>
       </div>
